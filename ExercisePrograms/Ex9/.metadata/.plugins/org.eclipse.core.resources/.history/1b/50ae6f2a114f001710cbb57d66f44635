@@ -1,0 +1,12 @@
+
+public class Manager extends Employee{
+
+	Manager(int w) {
+		super(w);
+		// TODO Auto-generated constructor stub
+	}
+
+	public void generateNumberHours(){
+		
+	}
+}

@@ -1,0 +1,12 @@
+作成されたペットの数はmainメソッドの1行目でインスタンス化された1匹のみ。
+ペットの名前について、
+まずmainメソッド2行目でペットの名前を setName() により Harry に設定し、
+"main: pet name is Harry"が出力された。
+次にmyMethodメソッドにオブジェクトが飛ばされた中で名前が変わらないまま
+"myMethod: pet name is Harry"が出力された。
+その出力の後 setName() によって名前は Mary と設定され、
+"myMethod: pet name is Harry"が出力された。
+myMethodを終了しmainに戻り、ここでは既にmyMethodメソッドで名前は Maryと
+なっているため、出力は"main: pet name is Mary" となっている。
+
+PrimitiveCallとの違いは、PrimitiveCallでmyMethodに渡されたkがint型の変数、すなわちプリミティブ型であったのに対し、今回myMethodに渡されたpetは参照型のデータ型であり、メソッドに渡されたのがコピーされた値か参照かである。参照型の今回のデータはmyMethod内でそのメソッドを呼び直接操作された。

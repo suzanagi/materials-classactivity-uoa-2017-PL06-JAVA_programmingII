@@ -1,0 +1,11 @@
+public class FtoC{
+
+    public static void main(String[] args){
+	int Fahrenheit = 95;
+	int Celsius;
+
+	Celsius = (5 / 9) * (Fahrenheit - 32);
+	System.out.println("95 F is "+ Celsius + "℃");
+    }
+
+}

@@ -1,0 +1,14 @@
+    How many fields does the Rectangle have?
+    	2つ
+
+    How many fields does the Box have?
+    	1つ(Length と Height は Rectangle から継承するため)
+
+    How many methods does the Rectangle have?
+    	3つ(Length of Sidesを返すものとLengthを返すものとHeightを返すもの)
+
+    How many methods does the Box have?
+    	2つ(Lengthを返すものとHeightを返すものはRectangleから継承できるため)
+
+    What are the advantages that the solution to Problem 2 has over the solution to Problem 1.
+    	 継承を使うことで無駄なフィールドの宣言をする必要がなくなり、また保守も簡易になる。

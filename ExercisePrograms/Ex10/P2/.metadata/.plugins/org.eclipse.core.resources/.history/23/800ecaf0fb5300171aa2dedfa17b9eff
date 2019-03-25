@@ -1,0 +1,10 @@
+
+public class Student implements Relatable {
+
+	@Override
+	public int isLargerThan(Relatable other) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

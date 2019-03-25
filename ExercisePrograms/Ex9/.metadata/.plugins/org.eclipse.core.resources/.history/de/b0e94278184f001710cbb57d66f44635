@@ -1,0 +1,10 @@
+
+class Dog extends Animal {
+ 		private static int count;
+		public Dog() {};
+		public void noise() {
+			System.out.println("Woof");
+			increment();
+	   } 
+		public static void increment() { count++; }
+}

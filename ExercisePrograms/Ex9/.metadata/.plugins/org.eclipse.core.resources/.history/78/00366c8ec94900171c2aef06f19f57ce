@@ -1,0 +1,9 @@
+
+public class Engineer extends Employee{
+
+	Engineer(int w) {
+		super(w);
+		// TODO Auto-generated constructor stub
+	}
+
+}

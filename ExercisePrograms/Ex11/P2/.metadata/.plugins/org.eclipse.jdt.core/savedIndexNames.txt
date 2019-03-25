@@ -1,0 +1,19 @@
+INDEX VERSION 1.129+/home/student/s1240234/2017_1/Exercises/Java/Ex11/P2/.metadata/.plugins/org.eclipse.jdt.core
+2702366956.index
+3719052217.index
+343080973.index
+2898100770.index
+1221552779.index
+1138408031.index
+940896267.index
+1239462115.index
+4128408873.index
+4204574953.index
+482319129.index
+1568552481.index
+2898143337.index
+437128398.index
+2524895788.index
+3066399230.index
+389884561.index
+1743899277.index

@@ -1,0 +1,18 @@
+    How many fields does the Rectangle have?
+    	2つ
+
+    How many fields does the Box have?
+    	3つ
+
+    How many methods does the Rectangle have?
+    	3つ
+
+    How many methods does the Box have?
+    	4つ
+
+    Are there any fields with the same meaning in the Rectangle and Box classes?
+    	3つ同じ意味のフィールドがある
+
+    Are there any methods in the Rectangle and Box classes expressing similar behavior?
+    	3つのメソッド(Sidesの長さを返すもの、Lengthを返すもの、Heightを返すもの)
+	がほぼ同じことをしている

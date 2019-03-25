@@ -1,0 +1,15 @@
+Creating a Package
+
+1. Which line of code will you need to add to each source file to put each class in the right package?
+   最初の行に"package packagename;" が必要。
+   Serverクラスでは、package mygame.server; を先頭に付加する。
+
+2. To adhere to the directory structure, you will need to create some subdirectories in the development directory and put source files in the correct subdirectories. What subdirectories must you create? Which subdirectory does each source file go in?
+   mygame以下に server, shared, clientのサブディレクトリを用意し、そこにServer.java, Utilities.java, Client.java を置くことでそれぞれのファイルがディレクトリ構造に対応する。
+
+3. Do you think you'll need to make any other changes to the source files to make them compile correctly? If so, what?
+   Server, Clientのファイルではそれぞれインポートの必要があるから、それぞれ
+   Serverでは import mygame.shared.Utilities;
+   Clientでは mygame.shared.*;
+   	      mygame.server.*;をインポートする必要がある。
+

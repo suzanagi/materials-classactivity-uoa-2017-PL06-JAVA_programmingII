@@ -1,0 +1,21 @@
+public class PrimitiveCall { 
+  public static void myMethod(int n) { 
+     System.out.println("myMethod: n= " + n); 
+     n = 100; 
+     System.out.println("myMethod: n= " + n); 
+   } // myMethod() 
+
+   public static void main(String argv[]) { 
+     int k = 5; 
+     System.out.println("main: k= " + k); 
+     myMethod(k); 
+     System.out.println("main: k= " + k);
+   } // main() 
+} // PrimitiveCall 
+
+kの値はmainメソッドの1行目の k = 5 により 5.
+またmain中でkの値をmyMethodへ渡したが、kはプリミティブ型のデータであり、
+myMethodに渡されたnの値はただkの値のコピーであるため、nについて操作して
+もmain中のkの値に何ら影響を及ぼさない。
+
+

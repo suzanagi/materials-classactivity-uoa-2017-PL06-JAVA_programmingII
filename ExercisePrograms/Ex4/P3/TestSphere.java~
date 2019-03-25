@@ -1,0 +1,15 @@
+class TestSphere{
+    public static void main(String[] args){
+
+    }
+}
+
+class Sphere{
+    float radius; //sphere's radius(cm)
+    Sphere(float f){
+	radius = f;
+    }
+    float heightContactPoint(Sphere secondSphere){
+	return 1.0f;
+    }
+}

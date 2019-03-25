@@ -1,0 +1,7 @@
+INDEX VERSION 1.3+/Network/Servers/stdfsv2/vol/vol8/home2/s1240234/2017_1/Exercises/Java/Ex9/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+361601180.index
+634647984.index
+2642931465.index
+1989972577.index
+1676132341.index
+3468594644.index

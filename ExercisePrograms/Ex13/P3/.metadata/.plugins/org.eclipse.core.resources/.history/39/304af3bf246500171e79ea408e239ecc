@@ -1,0 +1,4 @@
+
+public class NoSuchOwnerException extends Exception {
+	public NoSuchOwnerException(){}
+}

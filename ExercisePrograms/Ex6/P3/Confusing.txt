@@ -1,0 +1,18 @@
+1Confusingクラスには2つのコンストラクタがあり、それぞれ異なる型の引数を受けている。
+今回はmainにてConfusingを引数にnullを用いてインスタンス化したところ、これは参照型
+のObjectとは受け取られず基本データ型のdouble型の配列と受け取られ、2番目のdouble[]
+dArrayのコンストラクタへでインスタンス化された。理由はdouble型はobjectよりも詳細な
+型とみなされたからである。
+
+class Confusing { 
+    private Confusing (Object o) { // DO NOT CHANGE THIS LINE
+	System.out.println("Object"); /*Systemとoutの間に.を入れた*/
+    }				      /*括弧を追加した*/
+    private Confusing (double[] dArray) { // DO NOT CHANGE THIS LINE
+	System.out.println("double array");
+    }					/*括弧を追加した*/
+    public static void main(String[] args) {
+	Confusing o;   		     /*宣言を追加した*/
+	o = new Confusing(null); // DO NOT CHANGE THIS LINE
+    }	    			       /*括弧を追加した*/
+}

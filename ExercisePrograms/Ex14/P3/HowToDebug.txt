@@ -1,0 +1,4 @@
+AnalyzingData.javaを確実にするために、GeneratingData.javaで生成するDataStreamの値を変えてみるとよい。
+例えばGeneratingData.javaで生成する値をすべて30にすると、心拍数の平均は30.0となり、条件であるmore than 30に合致しないため表示がないことが確認できる。
+一方生成する値をすべて31にすると、心拍数の平均は31.0となり、条件であるmore than 30に合致するため、
+"Treatment is necessary: average rate of breath per minute is 31.0"と表示されることが確認できる。

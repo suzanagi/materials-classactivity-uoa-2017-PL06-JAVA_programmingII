@@ -1,0 +1,15 @@
+    Which method overrides a method in the superclass?
+    	  ClassB 中の methodTwo は ClassA 中の methodTwo と同じシグナチャで書いているため
+	  これはオーバーライドしている。
+
+    Which method hides a method in the superclass?
+    	  ClassB 中の静的メソッド methodFour は ClassA 中の静的メソッド methodFour と同じ
+	  シグナチャで書いているため隠蔽している。
+
+    What do the other methods do?
+    	  ClassB 中の methodOne については、ClassA 中にも同じ名前のメソッドが存在するが、
+	  ClassA のものはインスタンスメソッドであるのに対し ClassB のものは新たに static を
+	  付与しているためコンパイル時のエラーとなる。
+	  ClassB 中の methodThree についても同じく同じ名前のメソッドが存在しているが、ClassA
+	  中のものが静的メソッドであるのに対し ClassB ではインスタンスメソッドとして宣言してい
+	  るためこれもコンパイル時にエラーとなる。

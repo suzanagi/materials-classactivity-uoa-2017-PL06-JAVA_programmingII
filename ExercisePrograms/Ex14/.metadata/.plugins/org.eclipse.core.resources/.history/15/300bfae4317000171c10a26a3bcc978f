@@ -1,0 +1,22 @@
+import java.io.*;
+public class AnalyzingData {
+	static final String dataFile = "DataStream";
+	public static void main(String[] args) {
+		DataInputStream in = null;
+		try{
+			in = new DataInputStream(new BufferedInputStream(new FileInputStream(dataFile)));
+			try{
+				double averageBreath = 0.0;
+				for(int i = 0; i < 60; i++){
+					averageBreath += (double)in.readInt();
+				}
+			}catch(Exception e){
+				System.out.println(e);
+			}
+			in.close();
+		}catch(Exception e){
+			System.out.println(e);
+		}
+	}
+
+}

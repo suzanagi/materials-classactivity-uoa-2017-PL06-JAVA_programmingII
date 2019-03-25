@@ -1,0 +1,16 @@
+import java.util.Random;
+
+public class Regular extends Employee {
+
+	Regular(int w) {
+		super(w);
+		// TODO Auto-generated constructor stub
+		generateNumberHours();
+	}
+
+	public void generateNumberHours(){
+		Random rand = new Random();
+		int ran = rand.nextInt(1) + 8;
+		System.out.println(ran);
+	}
+}

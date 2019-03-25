@@ -1,0 +1,23 @@
+What is the difference between “/” and “%” operators?
+
+    / は割り算の演算子であり、%は割り算の余りを求める演算子である。
+
+What is the Step button for?
+
+    Stepボタンを使うことでコードの命令を一段階ずつ実行することができる。 
+
+What is the Play button for?
+
+    Playボタンを使うことでコードの命令を最後まで自動的に実行することができる。
+
+What is the Pause button for?
+
+    Playボタンでアニメーションを実行している際にPauseボタンで停止することができる。
+
+Is the value of the number variable equal to the value of the zigzag variable after execution of the program? 
+
+    numberの値は123でzigzagの値は321となるから二つの値は異なる。
+
+You should explain how the least significant digit of the value of the zigzag variable was calculated.
+
+    コード中ではoneとtensはzigzagの計算の際に100倍、10倍されているため1桁目に関係するのはhundredsの1のみである。

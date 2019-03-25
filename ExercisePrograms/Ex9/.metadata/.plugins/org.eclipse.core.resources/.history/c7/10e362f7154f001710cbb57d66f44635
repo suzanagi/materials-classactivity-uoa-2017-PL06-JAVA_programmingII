@@ -1,0 +1,8 @@
+
+class Cat extends Animal {
+		public Cat() {};
+		public void noise() {
+			System.out.println("Meow");
+			increment();
+		} 
+}

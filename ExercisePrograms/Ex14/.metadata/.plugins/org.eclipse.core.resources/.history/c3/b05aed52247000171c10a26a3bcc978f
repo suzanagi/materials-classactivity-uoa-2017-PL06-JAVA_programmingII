@@ -1,0 +1,12 @@
+
+public class Word {
+	String name;
+	int count;
+	public Word(String name){
+		this.name = name;
+		this.count = 1;
+	}
+	public plusCount(){
+		count ++;
+	}
+}

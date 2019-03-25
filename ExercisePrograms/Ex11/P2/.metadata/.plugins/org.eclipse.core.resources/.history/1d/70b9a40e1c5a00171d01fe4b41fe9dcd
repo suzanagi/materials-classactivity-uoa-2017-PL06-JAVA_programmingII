@@ -1,0 +1,4 @@
+
+public class AdvancedCar extends SimpleCar {
+
+}

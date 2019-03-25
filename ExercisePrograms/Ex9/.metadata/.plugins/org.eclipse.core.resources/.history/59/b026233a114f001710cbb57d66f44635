@@ -1,0 +1,12 @@
+
+public class PartTime extends Employee{
+
+	PartTime(int w) {
+		super(w);
+		// TODO Auto-generated constructor stub
+	}
+
+	public void generateNumberHours(){
+		
+	}
+}

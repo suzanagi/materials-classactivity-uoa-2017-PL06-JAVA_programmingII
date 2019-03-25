@@ -1,0 +1,36 @@
+import java.io.*;
+import java.util.*;
+
+public class WordCounting {
+
+	public static void main(String[] args) {
+		File file = new File("input.txt");
+		
+		/*BufferedReaderを用意*/
+		BufferedReader br= null;
+		
+		/*wordを記憶する配列(出現する単語は最大で200wordまでと想定する)*/
+		String[] words = new String[200];
+		
+		try{
+			/*brでfileを読み込む*/
+			br = new BufferedReader(new FileReader(file));
+			
+			/*一行ずつbufferに読み込み、*/
+			String buffer;
+			while()
+				
+			
+		}catch(FileNotFoundException e){
+			System.out.println("File " + file.getAbsolutePath() + " could not be found on filesystem");
+		}catch(IOException ioe){
+			System.out.println("exception while reading the file" + ioe);
+		}catch(Exception e){
+			System.out.println(e);
+		}finally{
+			/*BufferedReaderが存在したらクローズする*/
+			if(br != null) br.close();
+		}
+	}
+
+}

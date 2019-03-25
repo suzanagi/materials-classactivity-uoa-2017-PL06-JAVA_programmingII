@@ -1,0 +1,49 @@
+This source code has 5 different exceptions and 1 error. Please explain what types of exception and error occurs. Also, please explain why these exceptions and error occurs.
+Write your answers to the following questions in the file ExceptionTest.pdf:
+public class ExceptionTest {
+ 
+	public static void main(String[] args) {
+ 
+		int[] a = new int[-9];
+		int[] b = new int[Integer.MAX_VALUE];
+		int[] c = new int[9];
+        
+		Object tc = new TestClass();
+		((Integer)tc).byteValue();
+		tc = null;
+		tc.toString();
+		
+		for(int i=0; i<10; i++){
+			c[i] = i/(5-i);
+			b[i] = i;
+		}
+	}
+}
+ 
+class TestClass{
+	private int testvar;
+	TestClass(){
+		testvar = 0;
+	}
+	public int getvar(){return testvar;}
+}
+
+Errors:
+
+int[] a = new int[-9]; //java.lang.NegativeArraySizeException
+->要素数が負の数となっているので、正の数で生成しなければならない。
+
+int[] b = new int[Integer.MAX_VALUE]; //java.lang.OutOfMemoryError
+->リクエストされた配列のサイズがバーチャルマシンの上限を超ている。
+
+((Integer)tc).byteValue(); //java.lang.ClassCastException
+-> クラスの定義が見つからなかった
+
+tc.toString(); //java.lang.NullPointerException
+-> nullを使用したためオブジェクトがみつからない。
+
+c[i] = i/(5-i); //java.lang.ArithmeticException
+-> 算術計算で例外処理が発生する。
+
+b[i] = i; //java.lang.ArrayIndexOutOfBoundsException
+-> 配列へのアクセスが不正である。

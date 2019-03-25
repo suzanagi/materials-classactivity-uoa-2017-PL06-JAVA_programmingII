@@ -1,0 +1,65 @@
+class PeopleIntroduction{
+	public static void main(String[] args){
+	    String str;
+		Person x = new Person("Men");
+		str = x.Greeting();
+		System.out.println(str);
+	}
+}
+
+class Person{
+	private String name;
+	public Person(String name){
+		this.name = name;
+	}
+	public String Greeting(){
+		return "My name is " + name + ".";
+	}
+}
+
+class EnglishPerson extends Person{
+	public EnglishPerson(String name){
+		super(name);
+	}
+	public String Greeting(){
+		return "How do you do? " + super.Greeting();
+	}
+}
+
+class JapanesePerson extends Person{
+	public JapanesePerson(String name){
+		super(name);	
+	}
+	public String Greeting(){
+		return "Hajime mashite. " + super.Greeting();
+	}
+}
+
+class Student extends Person{
+	private String id;
+	public Student(String name, String id){
+		super(name);
+		this.id = id;
+	}
+	public String Greeting(){
+		return "I am a student. " + super.Greeting() + "My ID is " + this.id;	
+	}
+}
+
+class EnglishStudent extends Student{
+	public EnglishStudent(String name, String id){
+		super(name, id);
+	}
+	public String Greeting(){
+		return "How do you do?"	+ super.Greeting();
+	}
+}
+
+class JapaneseStudent extends Student{
+	public JapaneseStudent(String name, String id){
+		super(name, id);	
+	}
+	public String Greeting(){
+		return "Hajime mashite. " + super.Greeting();	
+	}
+}

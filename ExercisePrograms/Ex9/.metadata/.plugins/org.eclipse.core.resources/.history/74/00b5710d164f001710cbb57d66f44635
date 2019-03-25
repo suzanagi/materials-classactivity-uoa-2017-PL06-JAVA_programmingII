@@ -1,0 +1,6 @@
+
+abstract class Animal {
+	 	public static void increment() { count++; }
+	 	public static int getCount() { return count; }
+	 	abstract void noise();
+}

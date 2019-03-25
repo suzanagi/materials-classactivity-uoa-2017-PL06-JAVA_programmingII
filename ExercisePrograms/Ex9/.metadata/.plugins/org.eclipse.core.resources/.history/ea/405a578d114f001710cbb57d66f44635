@@ -1,0 +1,17 @@
+import java.util.Random;
+
+public class Regular extends Employee {
+
+	Regular(int w) {
+		super(w);
+		// TODO Auto-generated constructor stub
+		//検証用generateNumberHours();
+	}
+
+	public void generateNumberHours(){
+		Random rand = new Random();
+		int ran = rand.nextInt(1) + 8;
+		//検証用System.out.println(ran);
+		this.setH(ran);
+	}
+}

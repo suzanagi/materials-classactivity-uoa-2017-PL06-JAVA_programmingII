@@ -1,0 +1,4 @@
+
+public class DeluxeCar extends AdvancedCar {
+
+}

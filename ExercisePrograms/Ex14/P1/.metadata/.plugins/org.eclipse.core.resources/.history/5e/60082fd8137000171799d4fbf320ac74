@@ -1,0 +1,24 @@
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+public class ReverseString {
+
+	public static void main(String[] args) {
+		File file = new File("input.txt"); //create a file object
+		int ch; //variable to store the current byte
+		try{
+			FileInputStream fin = new FileInputStream(file);
+			while( (ch = fin.read()) != -1 )
+				System.out.print((char)ch);
+			fin.close();
+		}catch(FileNotFoundException e){
+			System.out.println("File " + file.getAbsolutePath() + " could not be found on filesystem");
+		}catch(IOException ioe){
+			System.out.println("Exception while reading the file" + ioe);
+		}
+		System.out.println("\n Program is finished.");
+	}
+
+}

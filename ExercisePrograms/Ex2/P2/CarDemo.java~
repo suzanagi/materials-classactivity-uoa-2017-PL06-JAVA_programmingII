@@ -1,0 +1,69 @@
+class Car{
+    int horsePower;      //horsePower (hp)
+    int speed;           //speed (km/h)
+    int fuelConsumption; //fuelConsumption (km/liter)
+    int gasTank;         //gasTank (liter)
+    int travelledTime;   //travelledTime (h)
+
+    /*Constructor*/
+    Car(){
+	horsePower = 20;
+	speed = 0;
+	fuelConsumption = 30;
+	gasTank = 90;
+	travelledTime = 0;
+    }
+
+    /*SpeedUp*/
+    void speedUp(int increaseSpeed){
+	speed += increaseSpeed;
+    }
+
+    /*ApplyBrakes*/
+    void applyBrakes(int decreaseSpeed){
+	speed -= decreaseSpeed;
+    }
+
+    /*TravelledTimeUp*/
+    void travelledTimeUp(){
+	travelledTime++;
+    }
+
+    /*PrintStateTank*/
+    void printStateTank(){
+	int usedFuel;
+	usedFuel = travelledTime * speed / fuelConsumption;
+	System.out.println("Gas tank: " + (gasTank - usedFuel) + "liter remaining.");
+    }
+}
+
+class CarDemo{
+    public static void main(String[] args){
+	Car car1 = new Car();
+	Car car2 = new Car();
+	Car car3 = new Car();
+
+	car1.speedUp(30);
+	car2.speedUp(60);
+	car3.speedUp(10);
+	car1.travelledTimeUp();
+	car2.travelledTimeUp();
+	car3.travelledTimeUp();
+
+	car1.applyBrakes(10);
+	car2.speedUp(30);
+	car3.speedUp(110);
+	car1.travelledTimeUp();
+	car2.travelledTimeUp();
+	car3.travelledTimeUp();
+
+	car3.applyBrakes(80);
+
+	System.out.print("Car1 ");
+	car1.printStateTank();
+	System.out.print("Car2 ");
+	car2.printStateTank();
+	System.out.print("Car3 ");
+	car3.printStateTank();
+    }
+}
